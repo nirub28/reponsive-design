@@ -15,7 +15,7 @@ const MyComponent = () => {
         currentIndex++;
       } else {
         clearInterval(interval);
-        setShowName(true); // Show the name after text has finished loading
+        setShowName(true); // https://www.smartsys.be/wp-content/uploads/2020/02/Image-block.jpg
       }
     }, typingSpeed);
 
