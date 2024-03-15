@@ -1,0 +1,74 @@
+.container {
+    position: relative;
+    width: 100%;
+  }
+  
+  .image {
+    margin-top: 30px;
+    width: 90vw;
+    height: 90vh; 
+  }
+
+  @media (max-width: 1200px) {
+    .image {
+      width: 80vw;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .image {
+      width: 70vw; /* Adjusted width for screens less than or equal to 992px */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .image {
+      width: 60vw; /* Adjusted width for screens less than or equal to 768px */
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .image {
+      width: 50vw; /* Adjusted width for screens less than or equal to 576px */
+    }
+  }
+  
+  
+  
+  .textOverlay {
+    position: absolute;
+    top: 50%;
+    left: 10%; /* Default left position */
+    transform: translateY(-50%);
+    background-color: rgb(222, 217, 217);
+    font-size: small;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 400px; /* Default width */
+    height: 300px; /* Default height */
+    overflow: hidden; /* Hide overflow content */
+  
+    /* Media query for smaller screens */
+    @media (max-width: 768px) {
+      left: 5%; /* Adjusted left position for smaller screens */
+      width:200px; /* Adjusted width for smaller screens */
+      height: auto; /* Adjusted height for smaller screens */
+      max-height: 300px; /* Limiting height for smaller screens */
+    }
+  }
+  
+  .textOverlay p {
+    margin: 0; 
+    margin-left:5px;
+    margin-right: 5px;
+  }
+  h5{
+    margin-left: 50px;
+  }
+  .textOverlay .name {
+    position: absolute;
+    bottom: 20px;
+    right: 20px; 
+  }
+  
