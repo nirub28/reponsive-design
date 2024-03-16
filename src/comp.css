@@ -4,6 +4,11 @@
 .image {
   width: 90vw;
   height: 100vh;
+
+  @media (max-height: 500px) {
+    height: 50vh;
+    max-width: 90vw; /* To prevent shrinking */
+  }
 }
 
 .textOverlay {
@@ -19,6 +24,7 @@
   width: 400px; 
   height: 300px; 
   overflow: hidden;
+
 }
 
 .textOverlay p {
