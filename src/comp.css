@@ -1,54 +1,38 @@
 .container {
-    position: relative;
-    width: 100%;
-  }
-  
-  .image {
-    margin-top: 30px;
-    width: 90vw;
-    height: 90vh;
-  }
-  
-  .textOverlay {
-    position: absolute;
-    top: 50%;
-    left: 10%; /* Default left position */
-    transform: translateY(-50%);
-    background-color: rgb(222, 217, 217);
-    font-size: small;
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    width: 400px; 
-    height: 300px; 
-    overflow: hidden;
-  
-    /* Media query for smaller screens */
-    @media (max-width: 1200) {
-      left: 5%;
-      width: 80%;
-      max-width: 80%;
-    }
-    @media (max-width: 800px) {
-        left: 5%;
-        width: 50%;
-        max-width: 60%;
-      }
-  }
-  
-  .textOverlay p {
-    margin: 0; 
-    margin-left: 5px;
-    margin-right: 5px;
-  }
-  
-  h5 {
-    margin-left: 20%;
-  }
-  
-  .textOverlay .name {
-    position: absolute;
-    bottom: 20px;
-    right: 20px; 
-  }
-  
+  position: relative;
+}
+.image {
+  width: 90vw;
+  height: 100vh;
+}
+
+.textOverlay {
+  position: absolute;
+  top: 20%;
+  left: 10%; /* Default left position */
+  transform: translateY(-50%);
+  background-color:rgb(222, 217, 217);
+  font-size: small;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 400px; 
+  height: 300px; 
+  overflow: hidden;
+}
+
+.textOverlay p {
+  margin: 0; 
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.head5{
+  margin-left: 50px;
+}
+
+.textOverlay .name {
+  position: absolute;
+  bottom: 20px;
+  right: 20px; 
+}

@@ -1,11 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import './comp.css'; // Import CSS file for styling
-import SecondComponent from './secondComponent';
+import './comp2.css'; // Import CSS file for styling
 
-const MyComponent = () => {
-  const [text, setText] = useState('');
+const SecondComponent = () => {
+  const [secondtext, setsecondtext] = useState('');
   const [showName, setShowName] = useState(false);
-  const [isTrue, setisTrue]= useState(true);
   const fullText = 'But I must explain to you how all this mistaken idea of denouncing of a pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself,';
   const typingSpeed = 5; 
 
@@ -13,34 +11,32 @@ const MyComponent = () => {
     let currentIndex = 0;
     const interval = setInterval(() => {
       if (currentIndex < fullText.length) {
-        setText(prevText => prevText + fullText[currentIndex]);
+        setsecondtext(prevText => prevText + fullText[currentIndex]);
         currentIndex++;
       } else {
         clearInterval(interval);
-        setShowName(true); // https://www.smartsys.be/wp-content/uploads/2020/02/Image-block.jpg
+        setShowName(true); 
       }
     }, typingSpeed);
 
     return () => clearInterval(interval);
   }, []);
-
   return (
-    <div className="container">
+    <div className="container2">
       <img
-        className="image"
-        src="https://wallpapercave.com/wp/wp5711093.jpg"
+        className="image2"
+        src="https://assets.entrepreneur.com/content/3x2/2000/20160603173131-businesswoman-working-desk-workplace.jpeg"
         alt="Your Image"
       />
-      <div className="textOverlay">
-        <h5 className="head5">From our Managing Director</h5>
-        <p>{text}</p>
+      <div className="textOverlay2">
+        <h5 className="head52">From our Vice - President</h5>
+        <p>{secondtext}</p>
         <p>
-        {showName && <p className="name">- Supriya Chunduru</p>}
+        {showName && <p className="name2">- Jaya Srikar Lanka</p>}
         </p>
       </div>
-      {isTrue && <SecondComponent />} {/* Conditional rendering of SecondComponent */}
     </div>
   );
 };
 
-export default MyComponent;
+export default SecondComponent;

@@ -1,0 +1,40 @@
+.container2 {
+    position: relative;
+  }
+  
+  .image2 {
+    width: 90vw;
+    height: 100vh;
+  }
+  
+  .textOverlay2 {
+    position: absolute;
+    top: 50%;
+    right: 5%; /* Adjust right position */
+    transform: translateY(-50%);
+    background-color: rgb(222, 217, 217);
+    font-size: small;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 400px; 
+    height: 300px;
+    overflow: hidden;
+  }
+  
+  .textOverlay2 p {
+    margin: 0; 
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  
+.head52{
+    margin-left: 50px;
+  }
+  
+  .textOverlay2 .name2 {
+    position: absolute;
+    bottom: 20px;
+    right: 20px; 
+  }
+  
